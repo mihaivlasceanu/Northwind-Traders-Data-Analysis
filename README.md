@@ -271,6 +271,7 @@ ORDER BY 1
 | 2013 | 208083.97 |                 |            |            |
 | 2014 | 617085.20 | 208083.97       | 409001.23  | 196.56     |
 | 2015 | 440623.87 | 617085.20       | -176461.33 | -28.60     |
+
 **2. Net sales by period + period-over-period change**
 
 As we do not have data for the same months for 2013 and 2015, we will have to split our analysis into two periods:
@@ -314,6 +315,7 @@ ORDER BY 1
 |------|-----------|-----------------------------|------------|------------|
 | 2013 | 208083.97 |                             |            |            |
 | 2014 | 335619.23 | 208083.97                   | 127535.26  | 61.29      |
+
 **2.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -353,6 +355,7 @@ ORDER BY 1
 |------|-----------|-----------------------------|------------|------------|
 | 2014 | 245103.17 |                             |            |            |
 | 2015 | 440623.87 | 245103.17                   | 195520.70  | 79.77      |
+
 **3. Net sales by month + month-over-month change**
 
 ```sql
@@ -388,6 +391,7 @@ LIMIT 10
 | 2014-02-01 | 38483.64  | 61258.07         | -22774.43  | -37.18     |
 | 2014-03-01 | 38547.22  | 38483.64         | 63.58      | 0.17       |
 | 2014-04-01 | 53032.95  | 38547.22         | 14485.73   | 37.58      |
+
 **4. Net sales by month vs same month of previous year**
 
 ```sql
@@ -442,6 +446,7 @@ LIMIT 15
 | 2014 | 7     | 51020.86  | 27861.90                   | 23158.96   | 83.12      |
 | 2014 | 8     | 47287.67  | 25485.28                   | 21802.39   | 85.55      |
 | 2014 | 9     | 55629.24  | 26381.40                   | 29247.84   | 110.87     |
+
 **5. Net sales by country and year + year-over-year change**
 
 **Note:**  Similar to question 1, it is not exactly relevant as we are not comparing the same periods (rather, a full year vs a few months)
@@ -502,6 +507,7 @@ LIMIT 30
 | 2014 | France      | 45263.38  | 17372.76        | 27890.62   | 160.54     |
 | 2014 | Germany     | 117320.16 | 35407.15        | 81913.01   | 231.35     |
 | 2014 | Ireland     | 20454.41  | 9123.38         | 11331.03   | 124.20     |
+
 **6. Net sales by country and period + period-over-period change**
 (solution to previous question's issue)
 
@@ -587,6 +593,7 @@ ORDER BY 1,2
 | 2014 | UK          | 11333.74  | 9273.68                     | 2060.06    | 22.21      |
 | 2014 | USA         | 75588.61  | 38105.68                    | 37482.93   | 98.37      |
 | 2014 | Venezuela   | 13894.54  | 9738.10                     | 4156.44    | 42.68      |
+
 **6.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -654,6 +661,7 @@ LIMIT 25
 | 2015 | Belgium     | 16083.68  | 7055.48                     | 9028.20    | 127.96     |
 | 2015 | Brazil      | 44835.77  | 13043.64                    | 31792.13   | 243.74     |
 | 2015 | Canada      | 11525.55  | 15210.71                    | -3685.16   | -24.23     |
+
 **7. Net sales by country and month + month-over-month change**
 
 **Version 1:**
@@ -800,6 +808,7 @@ LIMIT 30
 | 2013 | 8     | Finland     | 1376.00             | 346.56               | 1029.44    | 297.05     |
 | 2013 | 8     | France      | 538.60              | 2270.06              | -1731.46   | -76.27     |
 | 2013 | 8     | Germany     | 9518.82             | 6904.65              | 2614.17    | 37.86      |
+
 **8. Net sales by country and month vs same month of previous year**
 
 ```sql
@@ -853,6 +862,7 @@ LIMIT 10
 | 2013 | 7     | Sweden      | 695.63    |                            |            |            |
 | 2013 | 7     | Switzerland | 3047.12   |                            |            |            |
 | 2013 | 7     | USA         | 1226.20   |                            |            |            |
+
 **9. Number of orders + year-over-year change**
 
 ```sql
@@ -879,6 +889,7 @@ FROM orders_count_cte
 | 2013 | 152       |                     |            |            |
 | 2014 | 408       | 152                 | 256        | 168.42     |
 | 2015 | 270       | 408                 | -138       | -33.82     |
+
 **10. Number of orders by period + period-over-period change**
 
 **10.1 July-December 2014 vs July-December 2013**
@@ -907,6 +918,7 @@ FROM orders_count_cte
 |------|-----------|---------------------|------------|------------|
 | 2013 | 152       |                     |            |            |
 | 2014 | 223       | 152                 | 71         | 46.71      |
+
 **10.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -933,6 +945,7 @@ FROM orders_count_cte
 |------|-----------|---------------------|------------|------------|
 | 2014 | 155       |                     |            |            |
 | 2015 | 270       | 155                 | 115        | 74.19      |
+
 **11. Number of orders by month + month-over-month change**
 
 ```sql
@@ -990,6 +1003,7 @@ ORDER BY 1,2
 | 2015 | 3     | 73        | 54                   | 19         | 35.19      |
 | 2015 | 4     | 74        | 73                   | 1          | 1.37       |
 | 2015 | 5     | 14        | 74                   | -60        | -81.08     |
+
 **12. Number of orders by month vs same month of previous year**
 
 ```sql
@@ -1047,6 +1061,7 @@ ORDER BY 1,2
 | 2015 | 3     | 73        | 30                             | 43         | 143.33     |
 | 2015 | 4     | 74        | 31                             | 43         | 138.71     |
 | 2015 | 5     | 14        | 32                             | -18        | -56.25     |
+
 **13. Number of orders by country and year + year-over-year change**
 
 **Note:** Similar to question 1, it is not relevant as we are not comparing the same periods (a full year vs a few months)
@@ -1107,6 +1122,7 @@ LIMIT 30
 | 2014 | France      | 39        | 15.00               | 24         | 160.00     |
 | 2014 | Germany     | 64        | 24.00               | 40         | 166.67     |
 | 2014 | Ireland     | 10        | 5.00                | 5          | 100.00     |
+
 **14. Number of orders by country and period + period-over-period change (solution to previous question's issue)**
 
 **14.1 July-December 2014 vs July-December 2013**
@@ -1178,6 +1194,7 @@ ORDER BY 1,2
 | 2014 | UK          | 14        | 10.00               | 4          | 40.00      |
 | 2014 | USA         | 39        | 23.00               | 16         | 69.57      |
 | 2014 | Venezuela   | 10        | 8.00                | 2          | 25.00      |
+
 **14.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -1247,6 +1264,7 @@ ORDER BY 1,2
 | 2015 | UK          | 16        | 14.00               | 2          | 14.29      |
 | 2015 | USA         | 39        | 15.00               | 24         | 160.00     |
 | 2015 | Venezuela   | 18        | 10.00               | 8          | 80.00      |
+
 **15. Number of orders by country and month + month-over-month change**
 
 **Version 1:**
@@ -1313,6 +1331,7 @@ LIMIT 30
 | 2013 | 9     | Italy       | 1         | 2.00                 | -1         | -50.00     |
 | 2013 | 9     | Mexico      | 2         | 2.00                 | 0          | 0.00       |
 | 2013 | 9     | Spain       | 2         | 2.00                 | 0          | 0.00       |
+
 **Version 2:**
 In which we find a workaround for the issues we have with Version 1, by using a data dimension table
 
@@ -1385,6 +1404,7 @@ LIMIT 30
 | 2013 | 8     | Finland     | 1         | 1                    | 0          | 0.00       |
 | 2013 | 8     | France      | 1         | 3                    | -2         | -66.67     |
 | 2013 | 8     | Germany     | 6         | 3                    | 3          | 100.00     |
+
 **16. Number of orders by country and month vs same month of previous year**
 
 ```sql
@@ -1425,6 +1445,7 @@ LIMIT 10
 | 2013 | 7     | Sweden      | 1         |                                |            |            |
 | 2013 | 7     | Switzerland | 2         |                                |            |            |
 | 2013 | 7     | USA         | 2         |                                |            |            |
+
 **17. Discounts by year + year-over-year change**
 
 ```sql
@@ -1452,6 +1473,7 @@ ORDER BY 1
 | 2013 | 18214.53          |                    |            |            |
 | 2014 | 41303.55          | 18214.53           | 23089.02   | 126.76     |
 | 2015 | 29147.47          | 41303.55           | -12156.08  | -29.43     |
+
 **18. Discounts by period + period-over-period change**
 
 **18.1 July-December 2014 vs July-December 2013**
@@ -1493,6 +1515,7 @@ ORDER BY 1
 |------|---------------------|--------------------------------|------------|------------|
 | 2013 | 18214.53            |                                |            |            |
 | 2014 | 23278.53            | 18214.53                       | 5064.00    | 27.80      |
+
 **18.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -1532,6 +1555,7 @@ ORDER BY 1
 |------|---------------------|--------------------------------|------------|------------|
 | 2014 | 15299.82            |                                |            |            |
 | 2015 | 29147.47            | 15299.82                       | 13847.65   | 90.51      |
+
 **19. Discounts by month + month-over-month change**
 
 ```sql
@@ -1581,6 +1605,7 @@ ORDER BY 1,2
 | 2015 | 3     | 4971.30            | 5146.66             | -175.36    | -3.41      |
 | 2015 | 4     | 10831.88           | 4971.30             | 5860.58    | 117.89     |
 | 2015 | 5     | 1565.03            | 10831.88            | -9266.85   | -85.55     |
+
 **20. Discounts by country and month vs same month of previous year**
 
 ```sql
@@ -1642,6 +1667,7 @@ ORDER BY year, month
 | 2015 | 3     | 4971.30            | 1432.68                       | 3538.62    | 246.99     |
 | 2015 | 4     | 10831.88           | 2666.44                       | 8165.44    | 306.23     |
 | 2015 | 5     | 1565.03            | 3042.41                       | -1477.38   | -48.56     |
+
 ## Customer Analysis
 
 **1. Number of customers by year + year-over-year change**
@@ -1701,6 +1727,7 @@ FROM customers_count_cte
 |------|--------------|------------------------------------|------------|------------|
 | 2013 | 67           |                                    |            |            |
 | 2014 | 78           | 67                                 | 11         | 16.42      |
+
 **2.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -1727,6 +1754,7 @@ FROM customers_count_cte
 |------|--------------|------------------------------------|------------|------------|
 | 2014 | 70           |                                    |            |            |
 | 2015 | 81           | 70                                 | 11         | 15.71      |
+
 **3. Number of customers by month + change**
 
 ```sql
@@ -1763,6 +1791,7 @@ LIMIT 10
 | 2014 | 2     | 21           | 27                      | -6         | -22.22     |
 | 2014 | 3     | 24           | 21                      | 3          | 14.29      |
 | 2014 | 4     | 27           | 24                      | 3          | 12.50      |
+
 **4. Number of customers by month vs same month of previous year**
 
 ```sql
@@ -1811,6 +1840,7 @@ FROM customers_count_cte
 | 2015 | 3     | 49           | 24                                | 25         | 104.17     |
 | 2015 | 4     | 51           | 27                                | 24         | 88.89      |
 | 2015 | 5     | 13           | 26                                | -13        | -50.00     |
+
 **5. Number of customers by country and year + year-over-year change**
 
 **Note:**  Similar to question 1, it is not relevant as we are not comparing the same periods (a full year vs a few months)
@@ -1851,6 +1881,7 @@ LIMIT 10
 | 2013 | Germany | 9            |                        |            |            |
 | 2013 | Ireland | 1            |                        |            |            |
 | 2013 | Italy   | 2            |                        |            |            |
+
 **6. Number of customers by country and period + period-over-period change** (solution to previous question's issue)
 
 **6.1 July-December 2014 vs July-December 2013**
@@ -1892,6 +1923,7 @@ LIMIT 10
 | 2013 | Germany | 9            |                                    |            |            |
 | 2013 | Ireland | 1            |                                    |            |            |
 | 2013 | Italy   | 2            |                                    |            |            |
+
 **6.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -1931,6 +1963,7 @@ LIMIT 10
 | 2014 | France    | 5            |                                    |            |            |
 | 2014 | Germany   | 8            |                                    |            |            |
 | 2014 | Ireland   | 1            |                                    |            |            |
+
 **7. Number of customers by country and month + month_over_month change**
 
 **Version 1:**
@@ -1976,6 +2009,7 @@ LIMIT 10
 | 2013 | 7     | Sweden      | 1            |                         |            |            |
 | 2013 | 7     | Switzerland | 2            |                         |            |            |
 | 2013 | 7     | USA         | 2            |                         |            |            |
+
 **Version 2:**
 In which we find a workaround for the issues we have with Version 1, by using a data dimension table
 
@@ -2027,6 +2061,7 @@ LIMIT 10
 | 2013 | 7     | France    | 3            |                         |            |            |
 | 2013 | 7     | Germany   | 3            |                         |            |            |
 | 2013 | 7     | Ireland   | 0            |                         |            |            |
+
 **8. Number of customers by country and month vs same month of previous year**
 
 ```sql
@@ -2066,6 +2101,7 @@ LIMIT 10
 | 2013 | 7     | Sweden      | 1            |                                   |            |            |
 | 2013 | 7     | Switzerland | 2            |                                   |            |            |
 | 2013 | 7     | USA         | 2            |                                   |            |            |
+
 **9. Top 5 countries by net sales, overall**
 
 ```sql
@@ -2096,6 +2132,7 @@ LIMIT 5
 | Austria | 128003.84   |
 | Brazil  | 106925.78   |
 | France  | 81358.32    |
+
 **10. Top 5 countries by net sales, by year**
 
 ```sql
@@ -2145,6 +2182,7 @@ WHERE sales_rank <=5
 | 2015 | Austria | 45000.65  | 3          |
 | 2015 | Brazil  | 44835.77  | 4          |
 | 2015 | UK      | 22623.54  | 5          |
+
 **11. Top 5 cities by net sales, overall**
 
 ```sql
@@ -2225,6 +2263,7 @@ WHERE sales_rank <=5
 | 2015 | Boise          | 36310.11  | 3          |
 | 2015 | Rio de Janeiro | 32173.33  | 4          |
 | 2015 | Albuquerque    | 21238.27  | 5          |
+
 **13. Top 5 customers by net sales, overall**
 
 ```sql
@@ -2257,6 +2296,7 @@ LIMIT 5
 | SAVEA       | Save-a-lot Markets           | 104361.96   |
 | RATTC       | Rattlesnake Canyon Grocery   | 51097.80    |
 | HUNGO       | Hungry Owl All-Night Grocers | 49979.91    |
+
 **14. Top 5 customers by net sales, by year**
 
 ```sql
@@ -2300,6 +2340,7 @@ LIMIT 5
 | 2013 | RATTC       | Rattlesnake Canyon Grocery | 10475.78  | 3          |
 | 2013 | SAVEA       | Save-a-lot Markets         | 10338.27  | 4          |
 | 2013 | PICCO       | Piccolo und mehr           | 10033.28  | 5          |
+
 **15. Top 5 countries by number of customers, overall**
 
 ```sql
@@ -2317,6 +2358,7 @@ ORDER BY 2 DESC
 | Germany | 11    |
 | Brazil  | 9     |
 | UK      | 7     |
+
 **16. Top 5 countries by number of customers, by year**
 
 ```sql
@@ -2362,6 +2404,7 @@ LIMIT 10
 | 2014 | USA     | 13           | 1    |
 | 2014 | Germany | 11           | 2    |
 | 2014 | France  | 9            | 3    |
+
 **17. Top 5 cities by number of customers, overall**
 
 ```sql
@@ -2381,6 +2424,7 @@ LIMIT 6
 | Madrid         | 3     |
 | Buenos Aires   | 3     |
 | Rio de Janeiro | 3     |
+
 **18. Top 5 cities by number of customers, by year**
 
 ```sql
@@ -2429,6 +2473,7 @@ LIMIT 10
 | 2013 | Denmark  | Kobenhavn      | 1            | 5    |
 | 2013 | Finland  | Oulu           | 1            | 5    |
 | 2013 | France   | Lyon           | 1            | 5    |
+
 **19. Top 5 countries by number of orders, overall**
 
 ```sql
@@ -2448,6 +2493,7 @@ LIMIT 5
 | Brazil  | 83        |
 | France  | 77        |
 | UK      | 56        |
+
 **20. Top 5 countries by number of orders, by year**
 
 ```sql
@@ -2486,6 +2532,7 @@ LIMIT 5
 | 2013 | France  | 15        | 3    |
 | 2013 | Brazil  | 13        | 4    |
 | 2013 | UK      | 10        | 5    |
+
 **21. Top 5 cities by number of orders, overall**
 
 ```sql
@@ -2505,6 +2552,7 @@ LIMIT 5
 | Boise          | 31        |
 | Sao Paulo      | 31        |
 | Graz           | 30        |
+
 **22. Top 5 cities by number of orders, by year**
 
 ```sql
@@ -2550,6 +2598,7 @@ LIMIT 10
 | 2013 | Barquisimeto   | Venezuela | 5         | 4    |
 | 2013 | Sao Paulo      | Brazil    | 5         | 4    |
 | 2013 | Lander         | USA       | 5         | 4    |
+
 **23. Top 5 customers by number of orders, overall**
 
 ```sql
@@ -2581,6 +2630,7 @@ LIMIT 5
 | QUICK       | QUICK-Stop                   | 28           |
 | HUNGO       | Hungry Owl All-Night Grocers | 19           |
 | FOLKO       | Folk och fä HB               | 19           |
+
 **24. Top 5 customers by number of orders, by year**
 
 ```sql
@@ -2629,6 +2679,7 @@ LIMIT 10
 | 2013 | WARTH       | Wartian Herkku               | 4         | 3    |
 | 2013 | WANDK       | Die Wandernde Kuh            | 4         | 3    |
 | 2013 | TORTU       | Tortuga Restaurante          | 4         | 3    |
+
 **25. Average net sales per customer by year + year-over-year change**
 
 ```sql
@@ -2679,6 +2730,7 @@ FROM avg_sales_by_year_cte
 | 2013 | 3105.73                   |                            |            |            |
 | 2014 | 7175.41                   | 3105.73                    | 4069.68    | 131.04     |
 | 2015 | 5439.80                   | 7175.41                    | -1735.61   | -24.19     |
+
 **26. Average net sales per customer by period + period-over-period change**
 
 **26.1 July-December 2014 vs July-December 2013**
@@ -2731,6 +2783,7 @@ FROM avg_sales_by_year_cte
 |------|---------------------------|----------------------------|------------|------------|
 | 2013 | 3105.73                   |                            |            |            |
 | 2014 | 4302.81                   | 3105.73                    | 1197.08    | 38.54      |
+
 **26.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -2781,6 +2834,7 @@ FROM avg_sales_by_year_cte
 |------|---------------------------|----------------------------|------------|------------|
 | 2014 | 3501.47                   |                            |            |            |
 | 2015 | 5439.80                   | 3501.47                    | 1938.33    | 55.36      |
+
 **27. Average number of orders per customer by year + year-over-year change**
 
 ```sql
@@ -2816,6 +2870,7 @@ FROM avg_nr_orders_by_customer_cte
 | 2013 | 2.27                      |                                |            |            |
 | 2014 | 4.74                      | 2.27                           | 2.47       | 108.81     |
 | 2015 | 3.33                      | 4.74                           | -1.41      | -29.75     |
+
 **28. Average number of orders per customer by period + period-over-period change**
 
 **28.1 July-December 2014 vs July-December 2013**
@@ -2853,6 +2908,7 @@ FROM avg_nr_orders_by_customer_cte
 |------|---------------------------|--------------------------------|------------|------------|
 | 2013 | 2.27                      |                                |            |            |
 | 2014 | 2.86                      | 2.27                           | 0.59       | 25.99      |
+
 **28.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -2888,6 +2944,7 @@ FROM avg_nr_orders_by_customer_cte
 |------|---------------------------|--------------------------------|------------|------------|
 | 2014 | 2.21                      |                                |            |            |
 | 2015 | 3.33                      | 2.21                           | 1.12       | 50.68      |
+
 **29. Repeat purchase rate by year**
 
 ```sql
@@ -2930,6 +2987,7 @@ INNER JOIN return_customers_cte t2 ON t1.year=t2.year
 | 2013 | 67              | 43               | 64.18                |
 | 2014 | 86              | 81               | 94.19                |
 | 2015 | 81              | 60               | 74.07                |
+
 **30. Repeat purchase rate by corresponding period**
 
 **30.1 July-December 2014 vs July-December 2013**
@@ -2975,6 +3033,7 @@ INNER JOIN return_customers_cte t2 ON t1.year=t2.year
 |------|-----------------|------------------|----------------------|
 | 2013 | 67              | 43               | 64.18                |
 | 2014 | 78              | 56               | 71.79                |
+
 **30.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -3018,6 +3077,7 @@ INNER JOIN return_customers_cte t2 ON t1.year=t2.year
 |------|-----------------|------------------|----------------------|
 | 2014 | 70              | 43               | 61.43                |
 | 2015 | 81              | 60               | 74.07                |
+
 **31. Time between purchases (days)**
 
 ```sql
@@ -3094,6 +3154,7 @@ LIMIT 5
 | 59         | Raclette Courdavault    | 71155.70    |
 | 62         | Tarte au sucre          | 47234.97    |
 | 60         | Camembert Pierrot       | 46825.48    |
+
 **2. Top 5 products by net sales, by year**
 
 ```sql
@@ -3146,6 +3207,7 @@ WHERE sales_rank <=5
 | 2015 | 59         | Raclette Courdavault    | 26345.00  | 3          |
 | 2015 | 60         | Camembert Pierrot       | 17295.12  | 4          |
 | 2015 | 62         | Tarte au sucre          | 15992.92  | 5          |
+
 **3. Top 5 products by number of orders, overall**
 
 ```sql
@@ -3178,6 +3240,7 @@ LIMIT 5
 | 60         | Camembert Pierrot      | 51           |
 | 31         | Gorgonzola Telino      | 51           |
 | 56         | Gnocchi di nonna Alice | 50           |
+
 **4. Top 5 products by number of orders, by year**
 
 ```sql
@@ -3332,6 +3395,7 @@ WHERE rank <=5
 | 2015 | 41         | Jack's New England Clam Chowder  | 18           | 4    |
 | 2015 | 2          | Chang                            | 18           | 4    |
 | 2015 | 7          | Uncle Bob's Organic Dried Pears  | 17           | 5    |
+
 **7. Top 5 categories by net sales, overall**
 
 ```sql
@@ -3365,6 +3429,7 @@ LIMIT 5
 | 3           | Confections    | 167357.22   |
 | 6           | Meat & Poultry | 163022.36   |
 | 8           | Seafood        | 131261.75   |
+
 **8. Top 5 categories by net sales, by year**
 
 ```sql
@@ -3418,6 +3483,7 @@ WHERE sales_rank <=5
 | 2015 | 3           | Confections    | 55013.92  | 3          |
 | 2015 | 6           | Meat & Poultry | 53233.59  | 4          |
 | 2015 | 8           | Seafood        | 44911.30  | 5          |
+
 **9. Top 5 categories by number of orders, overall**
 
 ```sql
@@ -3506,6 +3572,7 @@ WHERE rank <=5
 | 2015 | 4           | Dairy Products   | 90        | 3    |
 | 2015 | 3           | Confections      | 89        | 4    |
 | 2015 | 2           | Condiments       | 62        | 5    |
+
 **11. Top 5 categories by number of customers, overall**
 
 ```sql
@@ -3529,6 +3596,7 @@ ORDER BY 2 DESC
 | Condiments       | 69    |
 | Grains & Cereals | 68    |
 | Produce          | 63    |
+
 **12. Top 5 categories by number of customers, by year**
 
 ```sql
@@ -3583,6 +3651,7 @@ WHERE rank <=5
 | 2015 | 8           | Seafood          | 56           | 3    |
 | 2015 | 3           | Confections      | 48           | 4    |
 | 2015 | 2           | Condiments       | 40           | 5    |
+
 **13. Number of discontinued products out of total**
 
  ```sql
@@ -3596,6 +3665,7 @@ WHERE discontinued='true'
 | pct_of_total |
 |--------------|
 | 10.39        |
+
 **14. Impact of discontinued products on yearly sales** 
 
 **Note:** probably not very relevant as we don't know WHEN those products were discontinued
@@ -3637,6 +3707,7 @@ ORDER BY year
 | 2013 | 208083.97       | 31618.96               | 15.20                  |
 | 2014 | 617085.20       | 91318.57               | 14.80                  |
 | 2015 | 440623.87       | 62053.39               | 14.08                  |
+
 **15. Number of discounts offered (and percent of total products sold)**
 
 ```sql
@@ -3649,6 +3720,7 @@ FROM order_details
 | products_sold | discounted_products_sold | round |
 |---------------|--------------------------|-------|
 | 2155          | 838                      | 38.89 |
+
 **16. Number of discounts offered (and percent of total products sold), by year**
 
 ```sql
@@ -3685,6 +3757,7 @@ ORDER BY 1
 | 2013 | 405           | 151                      | 37.28                        |
 | 2014 | 1059          | 437                      | 41.27                        |
 | 2015 | 691           | 250                      | 36.18                        |
+
 **17. Number of discounts offered (and percent of total products sold), by corresponding period**
 
 **17.1 July-December 2014 vs July-December 2013**
@@ -3723,6 +3796,7 @@ ORDER BY 1
 |------|---------------|--------------------------|------------------------------|
 | 2013 | 405           | 151                      | 37.28                        |
 | 2014 | 565           | 229                      | 40.53                        |
+
 **17.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -3759,6 +3833,7 @@ ORDER BY 1
 |------|---------------|--------------------------|------------------------------|
 | 2014 | 418           | 174                      | 41.63                        |
 | 2015 | 691           | 250                      | 36.18                        |
+
 **18. Most discounted products and average discount offered per product**
 
 **Note 1:** discounted, NOT discontinued
@@ -3788,6 +3863,7 @@ ORDER BY COUNT(discount) DESC
 | 24         | Guarana Fantastica              | 18               | 0.16         |
 | 41         | Jack's New England Clam Chowder | 17               | 0.11         |
 | 75         | Rhönbräu Klosterbier            | 17               | 0.14         |
+
 **19. Most discounted categories and average discount offered per category**
 
 ```sql
@@ -3813,6 +3889,7 @@ ORDER BY COUNT(discount) DESC
 | 6           | Meat & Poultry   | 76               | 0.15         |
 | 5           | Grains & Cereals | 63               | 0.14         |
 | 7           | Produce          | 45               | 0.14         |
+
 **20. Average net sales per order, overall**
 
 ```sql
@@ -3832,6 +3909,7 @@ FROm sales_per_order_cte
 | avg_sales_per_order |
 |---------------------|
 | 1525.05             |
+
 **21. Average net sales per order, by year + year-over-year change**
 
 ```sql
@@ -3868,6 +3946,7 @@ FROM avg_sales_per_order_cte
 | 2013 | 1368.97             |                               |            |            |
 | 2014 | 1512.46             | 1368.97                       | 143.49     | 10.48      |
 | 2015 | 1631.94             | 1512.46                       | 119.48     | 7.90       |
+
 **22. Average net sales per order, by period + period-over-period change**
 
 **22.1 July-December 2014 vs July-December 2013**
@@ -3906,6 +3985,7 @@ FROM avg_sales_per_order_cte
 |------|---------------------|-------------------------------|------------|------------|
 | 2013 | 1368.97             |                               |            |            |
 | 2014 | 1505.02             | 1368.97                       | 136.05     | 9.94       |
+
 **22.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -3942,6 +4022,7 @@ FROM avg_sales_per_order_cte
 |------|---------------------|-------------------------------|------------|------------|
 | 2014 | 1581.31             |                               |            |            |
 | 2015 | 1631.94             | 1581.31                       | 50.63      | 3.20       |
+
 **23. Average number of products bought per order, overall**
 
 ```sql
@@ -3961,6 +4042,7 @@ FROM nr_products_per_order_cte
 | avg_nr_products_per_order |
 |---------------------------|
 | 2.60                      |
+
 **24. Average number of products bought per order, by year + year-over-year change**
 
 ```sql
@@ -3998,6 +4080,7 @@ ORDER BY year
 | 2013 | 2.66                      |                                     |            |            |
 | 2014 | 2.60                      | 2.66                                | -0.06      | -2.26      |
 | 2015 | 2.56                      | 2.60                                | -0.04      | -1.54      |
+
 **25. Average number of products bought per order, by period + period-over-period change**
 
 **25.1 July-December 2014 vs July-December 2013**
@@ -4037,6 +4120,7 @@ ORDER BY year
 |------|---------------------------|-------------------------------------|------------|------------|
 | 2013 | 2.66                      |                                     |            |            |
 | 2014 | 2.53                      | 2.66                                | -0.13      | -4.89      |
+
 **25.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -4103,6 +4187,7 @@ ORDER BY 1
 | 2013 | 10279.87         |                   |            |            |
 | 2014 | 32468.77         | 10279.87          | 22188.90   | 215.85     |
 | 2015 | 22194.05         | 32468.77          | -10274.72  | -31.64     |
+
 **2. Freight by period + period-over-period change**
 
 **2.1 July-December 2014 vs July-December 2013**
@@ -4159,6 +4244,7 @@ ORDER BY year
 |------|--------------------|-------------------------------|------------|------------|
 | 2014 | 12129.74           |                               |            |            |
 | 2015 | 22194.05           | 12129.74                      | 10064.31   | 83         |
+
 **3. Freight by month + month-over-month change**
 
 ```sql
@@ -4188,6 +4274,7 @@ LIMIT 5
 | 2013-09-01 | 1123.48           | 1397.17            | -273.69    | -19.59     |
 | 2013-10-01 | 1520.59           | 1123.48            | 397.11     | 35.35      |
 | 2013-11-01 | 2151.86           | 1520.59            | 631.27     | 41.51      |
+
 **4. Freight by month vs same month of previous year**
 
 ```sql
@@ -4228,6 +4315,7 @@ LIMIT 15
 | 2014 | 7     | 2458.72           | 1288.18                      | 1170.54    | 90.87      |
 | 2014 | 8     | 3078.27           | 1397.17                      | 1681.10    | 120.32     |
 | 2014 | 9     | 3237.05           | 1123.48                      | 2113.57    | 188.13     |
+
 **5. Average number of days it takes to ship an order + year-over-year change**
 
 ```sql
@@ -4254,6 +4342,7 @@ FROM delivery_times_cte
 | 2013 | 8.1               |                             |            |            |
 | 2014 | 8.9               | 8.1                         | 0.8        | 9.9        |
 | 2015 | 8.0               | 8.9                         | -0.9       | -10.1      |
+
 **6. Deliveries by shipping company, absolute + percent out of total**
 
 ```sql
@@ -4271,6 +4360,7 @@ ORDER BY 2 DESC
 | United Package   | 326           | 0.39         |
 | Federal Shipping | 255           | 0.31         |
 | Speedy Express   | 249           | 0.30         |
+
 **7. Deliveries by shipping company, by year, absolute + percent out of total**
 
 ```sql
@@ -4295,6 +4385,7 @@ ORDER BY 3 DESC
 | 2013 | Federal Shipping | 58            | 0.38         |
 | 2013 | United Package   | 56            | 0.37         |
 | 2013 | Speedy Express   | 38            | 0.25         |
+
 **8. Number of delayed vs on time shipments by shipping company, overall + percent out of total**
 
 ```sql
@@ -4363,6 +4454,7 @@ ORDER BY 1
 | Federal Shipping | 249             | 240               | 9                 | 3.61        |
 | Speedy Express   | 245             | 233               | 12                | 4.90        |
 | United Package   | 315             | 299               | 16                | 5.08        |
+
 **9. Number of delayed vs on time shipments by shipping company and year + percent out of total (inconclusive)**
 
 ```sql
@@ -4431,6 +4523,7 @@ ORDER BY 1
 | Federal Shipping | 249             | 240               | 9                 | 3.61        |
 | Speedy Express   | 245             | 233               | 12                | 4.90        |
 | United Package   | 315             | 299               | 16                | 5.08        |
+
 **10. Number of delayed vs on time shipments by shipping company and corresponding period + percent out of total**
 
 **10.1 July-December 2014 vs July-December 2013**
@@ -4513,6 +4606,7 @@ ORDER BY 1, 6 DESC
 | 2014 | United Package   | 77              | 70                | 7                 | 9.09        |
 | 2014 | Speedy Express   | 78              | 73                | 5                 | 6.41        |
 | 2014 | Federal Shipping | 68              | 67                | 1                 | 1.47        |
+
 **10.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -4593,6 +4687,7 @@ ORDER BY 1, 6 DESC
 | 2015 | Speedy Express   | 74              | 70                | 4                 | 5.41        |
 | 2015 | United Package   | 106             | 103               | 3                 | 2.83        |
 | 2015 | Federal Shipping | 69              | 68                | 1                 | 1.45        |
+
 **11. Average delays by year**
 
 ```sql
@@ -4621,6 +4716,7 @@ ORDER BY 1
 | 2013 | 2.7       |
 | 2014 | 7.1       |
 | 2015 | 7.6       |
+
 **12. Average delays by corresponding period**
 
 **12.1 July-December 2014 vs July-December 2013**
@@ -4651,6 +4747,7 @@ ORDER BY 1
 |------|-----------|
 | 2013 | 2.7       |
 | 2014 | 7.1       |
+
 **12.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -4679,6 +4776,7 @@ ORDER BY 1
 |------|-----------|
 | 2014 | 7.6       |
 | 2015 | 7.6       |
+
 **13. Average delays by shipping company and year (inconclusive)**
 
 ```sql
@@ -4714,6 +4812,7 @@ ORDER BY 1,3 DESC
 | 2015 | Speedy Express   | 9.3       |
 | 2015 | United Package   | 6.3       |
 | 2015 | Federal Shipping | 5.0       |
+
 **14. Average delays by shipping company and corresponding period**
 
 **14.1 July-December 2014 vs July-December 2013**
@@ -4749,6 +4848,7 @@ ORDER BY 1,3 DESC
 | 2014 | Speedy Express   | 7.4       |
 | 2014 | United Package   | 7.0       |
 | 2014 | Federal Shipping | 6.0       |
+
 **14.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -4782,6 +4882,7 @@ ORDER BY 1,3 DESC
 | 2015 | Speedy Express   | 9.3       |
 | 2015 | United Package   | 6.3       |
 | 2015 | Federal Shipping | 5.0       |
+
 **15. Average shipping cost per order**
 
 ```sql
@@ -4792,6 +4893,7 @@ FROM orders
 | round |
 |-------|
 | 78.24 |
+
 **16. Average shipping cost per order, by year + change**
 
 ```sql
@@ -4817,6 +4919,7 @@ FROM freight_cte
 | 2013 | 67.63       |                       |            |            |
 | 2014 | 79.58       | 67.63                 | 11.95      | 17.67      |
 | 2015 | 82.20       | 79.58                 | 2.62       | 3.29       |
+
 **17. Average shipping cost per order, by period + period-over-period change**
 
 **17.1 July-December 2014 vs July-December 2013**
@@ -4844,6 +4947,7 @@ FROM freight_cte
 |------|-------------|-----------------------|------------|------------|
 | 2013 | 67.63       |                       |            |            |
 | 2014 | 82.90       | 67.63                 | 15.27      | 22.58      |
+
 **17.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -4869,6 +4973,7 @@ FROM freight_cte
 |------|-------------|-----------------------|------------|------------|
 | 2014 | 78.26       |                       |            |            |
 | 2015 | 82.20       | 78.26                 | 3.94       | 5.03       |
+
 **18. Freight distribution**
 
 ```sql
@@ -4914,6 +5019,7 @@ LIMIT 10
 | 2013 | 9     | 100-200          | 3     |
 | 2013 | 9     | 200-300          | 1     |
 | 2013 | 10    | <100             | 21    |
+
 ## Employee Analysis
 
 **1. Net sales by employee, overall**
@@ -4950,6 +5056,7 @@ ORDER BY 3 DESC
 | 9           | Anne Dodsworth   | 77308.08              |
 | 6           | Michael Suyama   | 73913.15              |
 | 5           | Steven Buchanan  | 68792.30              |
+
 **2. Net sales by employee and year + year-over-year change**
 
 ```sql
@@ -5002,6 +5109,7 @@ LIMIT 12
 | 2014 | Margaret Peacock | 128809.81 | 49945.12        | 78864.69   | 157.90     |
 | 2014 | Janet Leverling  | 108026.17 | 18223.96        | 89802.21   | 492.77     |
 | 2014 | Nancy Davolio    | 93148.11  | 35764.52        | 57383.59   | 160.45     |
+
 **3. Net sales by employee and period + period-over-period change**
 
 **3.1 July-December 2014 vs July-December 2013**
@@ -5056,6 +5164,7 @@ LIMIT 10
 | 2013 | Robert King      | 15232.16  |                             |            |            |
 | 2013 | Anne Dodsworth   | 9894.52   |                             |            |            |
 | 2014 | Nancy Davolio    | 63921.72  | 35764.52                    | 28157.20   | 78.73      |
+
 **3.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -5108,6 +5217,7 @@ LIMIT 10
 | 2014 | Steven Buchanan  | 7020.68   |                             |            |            |
 | 2014 | Anne Dodsworth   | 3176.58   |                             |            |            |
 | 2015 | Janet Leverling  | 76562.75  | 57095.21                    | 19467.54   | 34.10      |
+
 **4. Net sales by employee and month + month-over-month change**
 
 ```sql
@@ -5161,6 +5271,7 @@ LIMIT 10
 | 2013 | 7     | Andrew Fuller    | 1176.00   |                      |            |            |
 | 2013 | 8     | Laura Callahan   | 8263.80   | 1685.20              | 6578.60    | 390.38     |
 | 2013 | 8     | Nancy Davolio    | 5555.90   | 1614.88              | 3941.02    | 244.04     |
+
 **5. Net sales by employee and month vs same month of previous year**
 
 ```sql
@@ -5209,6 +5320,7 @@ LIMIT 5
 | 2013 | 7     | Janet Leverling  | 2963.22   |                            |            |            |
 | 2013 | 7     | Michael Suyama   | 2559.03   |                            |            |            |
 | 2013 | 7     | Laura Callahan   | 1685.20   |                            |            |            |
+
 **6. Number of orders by employee, overall**
 
 ```sql
@@ -5231,6 +5343,7 @@ ORDER BY 2 DESC
 | Michael Suyama   | 67    |
 | Anne Dodsworth   | 43    |
 | Steven Buchanan  | 42    |
+
 **7. Number of orders by employee and year + year-over-year change**
 
 ```sql
@@ -5270,6 +5383,7 @@ LIMIT 12
 | 2014 | Margaret Peacock | 81        | 31                  | 50         | 161.29     |
 | 2014 | Janet Leverling  | 71        | 18                  | 53         | 294.44     |
 | 2014 | Nancy Davolio    | 55        | 26                  | 29         | 111.54     |
+
 **8. Number of orders by employee and period + period-over-period change**
 
 **8.1 July-December 2014 vs July-December 2013**
@@ -5312,6 +5426,7 @@ LIMIT 12
 | 2014 | Margaret Peacock | 45        | 31                              | 14         | 45.16      |
 | 2014 | Janet Leverling  | 36        | 18                              | 18         | 100.00     |
 | 2014 | Nancy Davolio    | 35        | 26                              | 9          | 34.62      |
+
 **8.2 January-May 2015 vs January-May 2014**
 
 ```sql
@@ -5352,6 +5467,7 @@ LIMIT 12
 | 2015 | Margaret Peacock | 44        | 31                              | 13         | 41.94      |
 | 2015 | Nancy Davolio    | 42        | 16                              | 26         | 162.50     |
 | 2015 | Andrew Fuller    | 39        | 15                              | 24         | 160.00     |
+
 **9. Number of orders by employee and month + month-over-month change**
 
 ```sql
@@ -5386,6 +5502,7 @@ LIMIT 5
 | 2013 | 7     | Steven Buchanan  | 3         |                      |            |            |
 | 2013 | 7     | Laura Callahan   | 2         |                      |            |            |
 | 2013 | 7     | Anne Dodsworth   | 2         |                      |            |            |
+
 **10. Number of orders by employee and month vs same month of previous year**
 
 ```sql
@@ -5420,6 +5537,7 @@ LIMIT 5
 | 2013 | 7     | Steven Buchanan  | 3         |                                |            |            |
 | 2013 | 7     | Laura Callahan   | 2         |                                |            |            |
 | 2013 | 7     | Anne Dodsworth   | 2         |                                |            |            |
+
 **11. Average net sales by employee and year + year-over-year change**
 
 ```sql
@@ -5520,6 +5638,7 @@ FROM avg_sales_by_year_cte
 |------|---------------------------|----------------------------|------------|------------|
 | 2013 | 23120.44                  |                            |            |            |
 | 2014 | 37291.03                  | 23120.44                   | 14170.59   | 61.29      |
+
 **12.2 January - May 2015 vs January - May 2014**
 
 ```sql
@@ -5569,6 +5688,7 @@ FROM avg_sales_by_year_cte
 |------|---------------------------|----------------------------|------------|------------|
 | 2014 | 27233.69                  |                            |            |            |
 | 2015 | 48958.21                  | 27233.69                   | 21724.52   | 79.77      |
+
 **13. Average number of orders by employee and year + year-over-year change**
 
 ```sql
@@ -5604,6 +5724,7 @@ FROM avg_nr_orders_by_employee_cte
 | 2013 | 16.89                     |                                |            |            |
 | 2014 | 45.33                     | 16.89                          | 28.44      | 168.38     |
 | 2015 | 30.00                     | 45.33                          | -15.33     | -33.82     |
+
 **14. Average number of orders by employee and period + period-over-period change**
 
 **14.1 July - December 2014 vs July - December 2013**
@@ -5641,6 +5762,7 @@ FROM avg_nr_orders_by_employee_cte
 |------|---------------------------|--------------------------------|------------|------------|
 | 2013 | 16.89                     |                                |            |            |
 | 2014 | 24.78                     | 16.89                          | 7.89       | 46.71      |
+
 **14.2 January - May 2015 vs January - May 2014**
 
 ```sql
@@ -5676,6 +5798,7 @@ FROM avg_nr_orders_by_employee_cte
 |------|---------------------------|--------------------------------|------------|------------|
 | 2014 | 17.22                     |                                |            |            |
 | 2015 | 30.00                     | 17.22                          | 12.78      | 74.22      |
+
 **15. Average number of customers by employee and year + year-over-year change**
 
 ```sql
@@ -5711,6 +5834,7 @@ FROM avg_nr_customers_by_employee_cte
 | 2013 | 15.44                        |                                   |            |            |
 | 2014 | 33.00                        | 15.44                             | 17.56      | 113.73     |
 | 2015 | 24.11                        | 33.00                             | -8.89      | -26.94     |
+
 **16. Average number of customers by employee and period + period-over-period change**
 
 **16.1 July - December 2014 vs July - December 2013**
@@ -5748,6 +5872,7 @@ FROM avg_nr_customers_by_employee_cte
 |------|------------------------------|-----------------------------------|------------|------------|
 | 2013 | 15.44                        |                                   |            |            |
 | 2014 | 20.67                        | 15.44                             | 5.23       | 33.87      |
+
 **16.2 January - May 2015 vs January - May 2014**
 
 ```sql
@@ -5783,6 +5908,7 @@ FROM avg_nr_customers_by_employee_cte
 |------|------------------------------|-----------------------------------|------------|------------|
 | 2014 | 15.33                        |                                   |            |            |
 | 2015 | 24.11                        | 15.33                             | 8.78       | 57.27      |
+
 **17. Employee rank by net sales by month**
 
 ```sql
@@ -5829,6 +5955,7 @@ LIMIT 5
 | 2013 | 7     | Janet Leverling  | 2963.22               | 3                   |
 | 2013 | 7     | Michael Suyama   | 2559.03               | 4                   |
 | 2013 | 7     | Laura Callahan   | 1685.20               | 5                   |
+
 **18. Employee rank by nr orders by month**
 
 ```sql
