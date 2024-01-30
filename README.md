@@ -4,14 +4,14 @@
 **Data analysis project for the Northwind Traders dataset (Maven Analytics)**
 
 ## 📚  Table of Contents
-- [📄  Importing The Datasets (SQL)](https://github.com/mihaivlasceanu/)
-- [🧹 Creating Additional Tables (SQL)](https://github.com/mihaivlasceanu/)
-- [📈 Sales Overview (SQL)](https://github.com/mihaivlasceanu/)
-- [👨‍💼 Customer Analysis (SQL)](https://github.com/mihaivlasceanu/)
-- [📊 Product Analysis (SQL)](https://github.com/mihaivlasceanu/)
-- [🛳️ Shipping Analysis (SQL)](https://github.com/mihaivlasceanu/)
-- [👥Employee Analysis (SQL)]
-- [🎨 Data Visualization (Tableau)](https://github.com/mihaivlasceanu/)
+- [📄  Importing The Datasets (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#importing-the-datasets)
+- [🧹 Creating Additional Tables (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#creating-additional-tables)
+- [📈 Sales Overview (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#sales-overview)
+- [👨‍💼 Customer Analysis (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#customer-analysis)
+- [📊 Product Analysis (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#product-analysis)
+- [🛳️ Shipping Analysis (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#shipping-analysis)
+- [👥 Employee Analysis (SQL)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#employee-analysis)
+- [🎨 Data Visualization (Tableau)](https://github.com/mihaivlasceanu/Northwind-Traders-Data-Analysis?tab=readme-ov-file#data-visualization)
 
 ## Importing The Datasets
 **Source:** https://mavenanalytics.io/data-playground?page=3&pageSize=5
